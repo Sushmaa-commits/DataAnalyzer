@@ -1,0 +1,23 @@
+:root {
+  --sidebar-width: 300px;
+}
+.sidebar {
+  width: var(--sidebar-width);
+}
+
+.leaflet-container {
+  height: 100vh;
+  margin-left: var(--sidebar-width);
+}
+.leaflet-container,
+.loading-screen {
+  width: calc(100vw - var(--sidebar-width));
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none !important;
+}
